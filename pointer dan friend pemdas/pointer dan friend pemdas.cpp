@@ -2,7 +2,7 @@
 using namespace std;
 
 class mahasiswa {
-	public;
+    public:
 	int nim;
 	void showNim() {
 		cout << "No Induk = " << nim << endl;
@@ -18,6 +18,11 @@ int main()
 	mahasiswa& refMhs = mhs; //pointer reference refmhs
 	refMhs.nim = 2; //member access operator
 	mhs.showNim();
+
+	mahasiswa* pMhs = &mhs; //pointer dereference pMhs
+	pMhs->nim = 3; //Arrow operator
+	pMhs->showNim();
+	return 0;
 
 }
 
